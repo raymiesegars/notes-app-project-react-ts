@@ -3,7 +3,7 @@ import { Note } from "../models/note";
 import { User } from "../models/user";
 
 async function fetchData(input: RequestInfo, init?: RequestInit) {
-  const response = await fetch(input, init);
+  const response = await fetch("https://notes-app-project-react-ts-production.up.railway.app" + input, init);
   if(response.ok) {
     return response;
   } else {
@@ -14,7 +14,7 @@ async function fetchData(input: RequestInfo, init?: RequestInit) {
     } else if (response.status === 409) {
         throw new ConflictError(errorMessage);
     } else {
-      throw Error("REquest failed with status: " + response.status + "  message: " + errorMessage)
+      throw Error("Request failed with status: " + response.status + "  message: " + errorMessage)
     }
   }
 }
