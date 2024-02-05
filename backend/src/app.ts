@@ -16,13 +16,21 @@ app.use(morgan("dev"));
 
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({
+  origin: true,
+  credentials: true,
+  optionsSuccessStatus: 200
+}));
 
 app.use(session({
   secret: env.SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
   cookie: {
+    path: '/',
+    sameSite: 'none',
+    httpOnly: true,
+    secure: false,
     maxAge: 60 * 60 * 1000,
   },
   rolling: true,
