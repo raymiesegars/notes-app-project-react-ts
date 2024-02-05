@@ -3,7 +3,7 @@ import { Note } from "../models/note";
 import { User } from "../models/user";
 
 async function fetchData(input: RequestInfo, init?: RequestInit) {
-  const response = await fetch("https://notes-app-project-react-ts-production.up.railway.app" + input, init);
+  const response = await fetch(input, init);
   if(response.ok) {
     return response;
   } else {
