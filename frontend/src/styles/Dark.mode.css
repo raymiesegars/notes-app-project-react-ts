@@ -1,0 +1,48 @@
+/* Light Mode Styles */
+body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Dark Mode Styles */
+body.body-dark-mode {
+  background-color: #343a40;
+  color: #fff;
+}
+
+/* Example for custom components */
+body.body-dark-mode .custom-component {
+  background-color: #222;
+  color: #ddd;
+}
+
+/* Define basic button styling */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light mode styles */
+.btn-light {
+  background-color: #f8f9fa; /* Light grey */
+  color: #343a40; /* Almost black */
+}
+
+.btn-light:hover {
+  background-color: #e2e6ea; /* Slightly darker grey */
+}
+
+/* Dark mode styles */
+.btn-dark {
+  background-color: #343a40; /* Almost black */
+  color: #f8f9fa; /* Light grey */
+}
+
+.btn-dark:hover {
+  background-color: #23272b; /* Slightly lighter black */
+}
+

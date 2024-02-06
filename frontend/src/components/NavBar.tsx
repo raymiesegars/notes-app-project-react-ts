@@ -3,6 +3,8 @@ import { User } from "../models/user";
 import NavBarLoggedInView from "./NavBarLoggedInView";
 import NavBarLoggedOutView from "./NavBarLoggedOutView";
 import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import DarkModeToggle from './DarkModeToggle';
 
 interface NavBarProps {
   loggedInUser: User | null,
@@ -38,6 +40,7 @@ const NavBar = ({loggedInUser, onSignUpClicked, onLoginClicked, onLogoutSuccessf
           }
           </Nav>
         </Navbar.Collapse>
+        <DarkModeToggle />
       </Container>
     </Navbar> 
   );
