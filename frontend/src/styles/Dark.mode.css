@@ -7,13 +7,11 @@ body {
 /* Dark Mode Styles */
 body.body-dark-mode {
   background-color: #343a40;
-  color: #fff;
 }
 
 /* Example for custom components */
 body.body-dark-mode .custom-component {
   background-color: #222;
-  color: #ddd;
 }
 
 /* Define basic button styling */
