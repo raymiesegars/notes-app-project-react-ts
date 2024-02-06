@@ -10,8 +10,9 @@ body.body-dark-mode {
 }
 
 /* Example for custom components */
-body.body-dark-mode .custom-component {
-  background-color: #222;
+body.body-dark-mode .privacy-page-dark p {
+  background-color: #343a40;
+  color: #f8f9fa;
 }
 
 /* Define basic button styling */
