@@ -1,0 +1,5 @@
+Dark mode
+confirm delete button
+color pallete for users
+text styling
+email reminders at a selected time
