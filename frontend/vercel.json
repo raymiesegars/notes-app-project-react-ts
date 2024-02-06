@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+      {
+          "source": "/api/:match*",
+          "destination": "https://notes-app-project-react-ts-production-e2f0.up.railway.app/:match*"
+      }
+  ]
+}
